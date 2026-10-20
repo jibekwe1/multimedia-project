@@ -36,4 +36,5 @@ Each time, one file from the group plays at random.
 
 ## Challenges
 
-There weren't many challenges since I'd used GitHub Pages before. The main difficulty was waiting for the page to publish and for repo changes to go live.
+There weren't many challenges (for the site) since I'd used GitHub Pages before. The main difficulty was waiting for the page to publish and for repo changes to go live.
+For the audio, the original plan was to use the Zoom recorder. However, the noise from the recording was very loud, and the pickup from the buttons was quiet, which washed out all the button sounds when cleaning up the audio. Instead, I used a regular microphone (phone). Footage was cut up and saved as separate clips on my phone, and audio was pulled using the computer.
