@@ -1,0 +1,140 @@
+/* keyboard controller styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 16px;
+  background: #222;
+  color: #888;
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+p {
+  margin: 0;
+  max-width: 420px;
+  text-align: center;
+  font-size: 13px;
+}
+
+
+/* the black box that holds everything */
+#box {
+  display: flex;
+  flex-wrap: wrap; /* wraps on small screens */
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  max-width: 100%;
+  padding: 24px;
+  background: #000;
+  border-radius: 16px;
+}
+
+
+/* sticks */
+.sticks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.stick {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.ring {
+  position: absolute;
+  left: 22px;
+  top: 22px;
+  width: 76px;
+  height: 76px;
+  border: 2px solid #555;
+  border-radius: 50%;
+}
+
+.dot {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 28px;
+  height: 28px;
+  margin: -14px 0 0 -14px; /* centers it */
+  border-radius: 50%;
+  background: #888;
+  /* app.js sets --x and --y between -1 and 1, so 18px is how far the dot can move */
+  transform: translate(calc(var(--x, 0) * 18px), calc(var(--y, 0) * 18px));
+}
+
+
+/* the key letters around each stick */
+.key {
+  position: absolute;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #666;
+}
+
+.up, .down {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.left, .right {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.up { top: 0; }
+.down { bottom: 0; }
+.left { left: 0; }
+.right { right: 0; }
+
+
+/* buttons */
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border: 2px solid #666;
+  border-radius: 50%;
+  color: #666;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.button small {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+
+/* pressed (app.js adds the class "on") */
+.on {
+  color: #4af;
+}
+
+.button.on {
+  border-color: #4af;
+}
