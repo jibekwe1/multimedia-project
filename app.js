@@ -1,10 +1,6 @@
-// keyboard controller
-// press keys to move the sticks and press the buttons
-
-
 // ---------- sounds ----------
 
-// loads files like sounds/stickPush_0.wav, sounds/stickPush_1.wav, ...
+// loads files like sounds/stickPush_0.wav
 function loadSounds(name, count) {
   let list = [];
   for (let i = 0; i < count; i++) {
