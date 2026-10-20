@@ -33,3 +33,7 @@ I cut these from a recording of me moving the sticks and clicking the buttons. I
 | `btnUp` | A button comes up | 2 |
 
 Each time, one file from the group plays. It's random.
+
+## Challenges
+
+There were not many challenges since I was using GitHub Pages which I've used in the past before. The main diffculty was the waiting for the page to publish, and changes to the repo to go live.
